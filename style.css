@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-color: rgb(25, 25, 25);
+}
+.line{
+    color: rgba(255, 255, 255, .75);
+    border-right:2px solid rgba(255, 255, 255, 0.75) ;
+    font-family:  'Courier New', Courier, monospace;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.tyounf-animation{
+    animation: blinkCursor 700ms steps(40) infinite normal, typing 4s steps(40) 1s  both;
+}
+@keyframes typing{
+    from{
+        width:0;
+    }
+    to{
+        width:16em;
+    }
+}
+@keyframes blinkCursor{
+    from{
+        border-right-color :rgba(255, 255, 255, 0.75) ;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+#fixed{
+    position: relative;
+    top:200px;
+    right:200px;
+    color:white;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
