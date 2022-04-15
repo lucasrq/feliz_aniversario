@@ -28,7 +28,7 @@ body{
         width:0;
     }
     to{
-        width:16em;
+        width:20em;
     }
 }
 @keyframes blinkCursor{
